@@ -19,3 +19,24 @@ elif y > x and y > z:
 else:
 
 	print(z)
+## Updated version 
+
+x = input("Variable x:\n")
+print("x: "+x)
+y = input("Variable y:\n")
+print("y: "+y)
+z = input("Variable z:\n")
+print("z: "+z)
+
+
+if x > y and x > z:
+  
+	print("The largest number is: "+x)
+
+elif y > x and y > z:
+  
+	print("The largest number is: "+y)
+
+else:
+
+	print("The largest number is: "+z)
