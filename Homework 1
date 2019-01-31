@@ -40,11 +40,11 @@ elif y > x and y > z:
 ## FINAL VERSION
 
 x = int(input("Variable x:\n"))
-print("x: ",x)
+# print("x: ",x)
 y = int(input("Variable y:\n"))
-print("y: ",y)
+# print("y: ",y)
 z = int(input("Variable z:\n"))
-print("z: ",z)
+# print("z: ",z)
 
 
 if x > y and x > z:
@@ -58,6 +58,3 @@ elif y > x and y > z:
 else:
 
 	print("The largest number is",z)
-else:
-
-	print("The largest number is: "+z)
