@@ -1,0 +1,23 @@
+counter  = 5
+while counter > 0:
+    print(counter)
+    counter = counter - 1
+print("GO!!!!")
+
+
+phrase = "my hovercraft is full of eels"
+length = len(phrase)
+i = 0   
+while i < length:
+    print(phrase[i])
+    i +=1 
+print("Stop")
+
+
+for character in phrase:
+    print(character)
+
+    """
+    
+for number in range(1,5):
+    print(number)
