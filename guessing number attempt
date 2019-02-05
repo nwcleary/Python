@@ -1,0 +1,15 @@
+guess = 50
+print("My guess is",guess,"Is that correct?")
+
+while True:
+    inp = input("\n")
+    
+    if inp == "higher":
+        print("My guess is",guess,"Is that correct?")
+        
+    if inp == "lower":
+        print("My guess is",guess,"Is that correct?")
+        
+    if inp == "correct":
+            print("The number is",guess)
+            break
