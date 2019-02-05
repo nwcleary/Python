@@ -1,0 +1,11 @@
+##Multiplication table while loop
+
+i = int(input("Enter number\n"))
+
+counter = 0
+
+while counter <= 10:
+    b = counter * i
+    print(i,"x",counter,"=",b)
+    counter = counter + 1
+
