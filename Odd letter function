@@ -1,0 +1,6 @@
+def odd_letters(x):
+    for index in range(len(x)):
+        if(index % 2 != 0):
+            print(x[index])
+            
+odd_letters(x = input("Enter your string:\n"))
