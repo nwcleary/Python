@@ -21,3 +21,19 @@ def odd_letters():
             
 new_word = odd_letters()
 print("The even letters within the word:", new_word
+
+## SLIGHTLY CLEANER VERSION 
+
+def odd_letters(word):
+    word_length = len(word)
+    new_word = ""
+
+    for index in range(word_length):
+        old = ord(word[index])
+        if(old % 2 != 0):
+            new_word += chr(old)
+            index += 1
+    print("even letters:",new_word)
+            
+word = input("What is your word?\n")
+odd_letters(word)
