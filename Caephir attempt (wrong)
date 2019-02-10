@@ -53,3 +53,16 @@ for xx in inp:
         reverse = reverse + 'z'
         
 print("Ciphered word:",reverse)
+
+
+# CORRECT VERSION 
+word = input("What word should I cipher?\n")
+word_length = len(word)
+
+ciphered = ""
+for i in range(word_length):
+ old = ord(word[i])
+ new=old+1
+ ciphered +=chr(new)
+ i+=1
+print("Ciphered word: "+ciphered)
