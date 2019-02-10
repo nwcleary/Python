@@ -4,3 +4,24 @@ def odd_letters(x):
             print(x[index])
             
 odd_letters(x = input("Enter your string:\n"))
+
+# WORK IN PROGRESS
+
+def get_word():
+    
+    word = input("What is your word?\n")
+    word_length = len(word)
+    new_word = ""
+    
+    for index in range(word_length):
+        old = ord(word[index])
+        if(old % 2 != 0):
+            new_word += chr(old)
+            index += 1
+    return new_word
+            
+            
+
+new_word = ge
+t_word()
+print("The even letters within the word:", new_word)
