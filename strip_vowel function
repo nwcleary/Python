@@ -15,3 +15,16 @@ def rem_vowel(string):
 # Driver program 
 string = "GeeksforGeeks - A Computer Science Portal for Geeks"
 rem_vowel(string)
+
+## CLEANED UP WITH A RETURN 
+
+def strip_vowels():
+    
+    word = input("What is your word?\n")
+    vowels = ('a', 'e', 'i', 'o', 'u', 'y')  
+    for index in word: 
+        if index in vowels: 
+            word = word.replace(index,"") 
+    return  (print("No vowels:",word)) 
+            
+strip_vowels()
