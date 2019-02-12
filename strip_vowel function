@@ -28,3 +28,14 @@ def strip_vowels():
     return  (print("No vowels:",word)) 
             
 strip_vowels()
+
+## EVEN CLEANER 
+def strip_vowels(word):
+    
+    vowels = ('a', 'e', 'i', 'o', 'u', 'y')  
+    for index in word: 
+        if index in vowels: 
+            word = word.replace(index,"") 
+    return  word 
+            
+print (strip_vowels(word = "hello this is the practice string"))
