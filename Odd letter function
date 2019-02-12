@@ -54,3 +54,18 @@ def odd_letters():
             
 
 odd_letters()
+
+
+## CLEANED UP RETURN 
+
+def odd_letters(word):
+    new_word = ""
+    
+    for index in range(len(word)):
+        old = ord(word[index])
+        if(old % 2 == 0):
+            new_word += chr(old)
+            index += 1
+    return new_word
+         
+print (odd_letters(word = "abcdefghijklmnopqrstuvwyxz"))
