@@ -39,3 +39,22 @@ def strip_vowels(word):
     return  word 
             
 print (strip_vowels(word = "hello this is the practice string"))
+
+## TRUE FALSE ADN HELPER FUNCTION
+
+def is_a_vowel(character):
+    if character in ('a', 'e', 'i', 'o', 'u', 'y'):
+        return True
+    else:
+        return False
+
+def strip_vowels(word):
+    
+#    vowels = ('a', 'e', 'i', 'o', 'u', 'y')  
+    for char in word: 
+        #if char in vowels: 
+         if is_a_vowel(char):
+            word = word.replace(char,"") 
+    return word 
+            
+print(strip_vowels(word = "string"))
