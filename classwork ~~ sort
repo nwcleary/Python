@@ -52,3 +52,33 @@ print(sorted_tuple)
 my_dict = {"table":"mesa","house":"casa"}
 sorted_dict = sorted(my_dict)
 print(sorted_dict)
+
+
+
+
+
+dict1 = {"my":"mi", 
+         "house":"casa",
+         "is":"es",
+         "your":"tu",
+         }
+phrase = "my house is your house"
+
+def function2(phrase, dict1):
+    
+    split_phrase = phrase.split()
+  
+    translated_list = []
+    for words in split_phrase:
+       if word in dict1:
+           translation = dict1[word]
+           translated_list.append(translation)
+       else:
+           translated_list.append("UNK")
+           
+    print(translated_list)
+    translated_phrase = " ".join(translated_list)
+    return translated_list
+
+print(function2(phrase,dict1))      
+    
