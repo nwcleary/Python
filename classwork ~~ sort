@@ -1,0 +1,54 @@
+'''
+mystring = "elephant"
+oddstring = ""
+#myrange = range(mystring) 
+
+for i in mystring(1,15,2):
+        print (i)
+
+list1 = [1]
+list2 = [1,2]
+
+mixdlist = [1,"two",True]
+nestedlist= [[1,2],[3,4]]
+
+print(nestedlist)
+
+        
+animals = ["cat","cat","octopus","shark","goat","cat"]
+filter("cats", animals)
+
+print(animals)
+'''
+
+
+def function_1(word1, word2):
+   
+    word1 = set(list(word1))
+    word2 = set(list(word2))
+    
+    result = list(word1.intersection(word2))
+    result = sorted(result,reverse=True)
+    return result
+    
+print(function_1("bat","cat"))
+
+'''
+a_list= [1,3,6,2,5]
+    
+sorted(a_list)
+print(a_list)
+
+a_list = [1,4,2,5,3]
+a_list.sort(reverse=True)
+print(a_list)
+
+sorted_string = sorted("elephantnigga")
+print(sorted_string)
+    
+sorted_tuple = sorted((1,5,6,7,8))
+print(sorted_tuple)
+
+my_dict = {"table":"mesa","house":"casa"}
+sorted_dict = sorted(my_dict)
+print(sorted_dict)
