@@ -1,0 +1,13 @@
+def function1(word):
+    
+    split_word = word.split()
+    unique = set(split_word)
+    unique_word_list = list(unique)
+    
+    
+    unique_word_list.sort()
+    
+    return unique_word_list
+
+
+print(function1("woaaa dude far out man"))
