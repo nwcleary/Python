@@ -40,3 +40,25 @@ def function1(word):
 
 
 print(function1("woaaa dude far out man"))
+
+##COVERT STRING TO LIST AND RETURN NAMES##
+def function1(sentence):
+    
+    upper = []
+    lower = []
+    
+    split_sentence = sentence.split()
+    list_sentence = list(split_sentence)
+    
+    del list_sentence[0]
+    
+    for word in list_sentence:
+        if word.islower():
+            lower.append(word) 
+        else:
+            upper.append(word)
+            
+    upper.sort()
+    return upper
+
+print(function1("They met John and Fred and Fred’s cousin."))
