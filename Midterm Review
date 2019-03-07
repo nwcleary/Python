@@ -42,6 +42,7 @@ def function1(word):
 print(function1("woaaa dude far out man"))
 
 ##COVERT STRING TO LIST AND RETURN NAMES##
+
 def function1(sentence):
     
     upper = []
@@ -62,3 +63,23 @@ def function1(sentence):
     return upper
 
 print(function1("They met John and Fred and Fred’s cousin."))
+
+##RECIEPT FUNCTION##
+
+def function1(receipt):
+    
+    receipt = receipt.strip(".")
+    receipt = receipt.replace("$","")
+    
+    split_receipt = receipt.split()
+    list_receipt = list(split_receipt)
+    
+    number = float(list_receipt[3])
+    number  = number * 1.06
+    number = round(number, 2)
+    number = str(number)
+    
+    print("Your total is $"+number+".")   
+   
+function1("Your total is $5.03.")
+
