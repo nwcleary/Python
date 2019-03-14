@@ -1,0 +1,21 @@
+apartments = [{"location":"North End", "rent":2200, "num_beds": 1},
+{"location":"Beacon Hill", "rent":2500, "num_beds": 1},
+{"location": "Lowell", "rent": 1500, "num_beds": 2},
+{"location": "Medford", "rent": 1700, "num_beds": 2}]
+
+def apartment_search(apartments,rent,num_beds):
+    
+    winners= []
+    
+    for i in apartments:
+       if rent >=  i["rent"] and num_beds >= i["num_beds"] :
+           winners.append(i) 
+           print(winners)
+        
+       else:
+               print("This apartment doesn't fit your citeria")
+    
+    return winners       
+           
+            
+apartment_search(apartments, 2000, 2)
