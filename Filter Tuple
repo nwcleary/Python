@@ -1,0 +1,14 @@
+def filter_by_type(tuple_input):
+    
+    result = ()
+    for element in tuple_input:
+        if type(element) == str:
+            result += (element,)
+        if type(element) == bool:
+            result += (element,)
+            
+    return result
+    
+tuple_input = (1,"dog",False)
+print(filter_by_type(tuple_input)) 
+  
