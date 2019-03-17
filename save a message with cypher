@@ -23,3 +23,33 @@ def main(message,filename):
 message = ("my car is black")
 filename = ("save_a_message.txt")
 main(message,filename)
+
+
+## EIDTED PROBABALY USELSS
+
+  a = bool
+    if "!" in message:
+        a = True
+        print(a)
+        
+    word_length = len(message)
+    ciphered = ""    
+    for i in range(word_length):
+        old = ord(message[i])
+        new=old+1
+        ciphered += chr(new)
+        i+=1
+        
+    if a == True:
+        final_ciphered1 = ciphered.replace("!"," ")
+        final_cipheredl = []
+        final_cipheredl.append(final_ciphered1+'!')
+        #final_cipheredl.append('!')
+        
+        s = ''.join(final_cipheredl)
+        #s.strip('"')
+        
+        return s
+    else:
+        final_ciphered = ciphered.replace("!"," ")
+        return final_ciphered
