@@ -1,0 +1,31 @@
+f = open("bitch.txt","r")
+for line in f:
+    print(line)
+f.close()
+
+
+
+
+
+
+
+
+
+import re
+
+lowell = "Founded in the 1820s as a planned manufacturing center for textiles, Lowell is located along the rapids of the Merrimack River, 25 miles northwest of Boston in what was once the farming community of East Chelmsford, Massachusetts. The so-called Boston Associates, including Nathan Appleton and Patrick Tracy Jackson of the Boston Manufacturing Company, named the new mill town after their visionary leader, Francis Cabot Lowell,[8] who had died five years before its 1823 incorporation. As Lowell's population grew, it acquired land from neighboring towns, and diversified into a full-fledged urban center. Many of the men who composed the labor force for constructing the canals and factories had immigrated from Ireland, escaping the poverty and Potato Famines of the 1830s and 1840s. The mill workers, young single women called Mill Girls, generally came from the farm families of New England."
+
+
+def find_foundation_date(city_article):
+    
+    
+    
+    pattern = re.compile('\d{4}')
+    date_matches = pattern.findall(city_article)
+    date_matches = [int(x) for x in date_matches]
+    date_matches.sort()
+    string1 = str(date_matches[0])
+    return string1
+    
+    
+print(find_foundation_date(city_article = lowell))
