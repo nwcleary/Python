@@ -1,0 +1,18 @@
+def create_a_mask(word):
+    
+    em_list = []
+    vowels = ['a','e','i','o','u','y']
+    a = list(word)
+    
+    for index in a:
+        if index in vowels:
+            em_list += [1]
+        else:
+            em_list += [0]
+    
+    
+    em_tuple = tuple(em_list)
+    return em_tuple
+        
+word = 'dog'
+print(create_a_mask(word)) 

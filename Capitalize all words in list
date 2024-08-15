@@ -1,7 +1,0 @@
-def fix_names(list1):
-    
-    list2 = [index.title() for index in list1] 
-    return list2
-       
-list1 = ["barack obama","Donald trump","tom Cruise"]
-print(fix_names(list1)) 
