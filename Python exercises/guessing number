@@ -1,0 +1,31 @@
+guess = 50
+print("My guess is",guess,"Is that correct?")
+
+while True:
+    inp = input("\n")
+    
+    if inp == "higher":
+        print("My guess is",guess,"Is that correct?")
+        
+    if inp == "lower":
+        print("My guess is",guess,"Is that correct?")
+        
+    if inp == "correct":
+            print("The number is",guess)
+            break
+## CORRECT FINAL VERSION 
+
+lower_bound = 0
+upper_bound = 100
+number = 50
+while True:
+ feedback = input("My guess is "+str(number)+". Is that correct?\n")
+ if feedback == "higher":
+     lower_bound = number
+     number = number + (upper_bound - lower_bound) // 2
+ elif feedback == "lower":
+     upper_bound = number
+     number = number - (upper_bound - lower_bound) // 2
+ elif feedback == "correct":
+     print("The number is "+str(number)+"!")
+     break

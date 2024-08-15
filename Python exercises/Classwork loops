@@ -1,0 +1,58 @@
+counter  = 5
+while counter > 0:
+    print(counter)
+    counter = counter - 1
+print("GO!!!!")
+
+
+phrase = "my hovercraft is full of eels"
+length = len(phrase)
+i = 0   
+while i < length:
+    print(phrase[i])
+    i +=1 
+print("Stop")
+
+
+for character in phrase:
+    print(character)
+
+    """
+    
+for number in range(1,5):
+    print(number)
+
+# FINDING VOWELS IN A STRING USING FOR LOOP
+
+para = "This article was all about Space analysis. It was difficult to find an  article about Space analysis being used in a business directly, so this article just focuses on the concept itself, and doesn’t give real world examples"
+#length = len(para)
+
+vowels=0
+a=0
+e=0
+i=0
+o=0
+u=0
+y=0
+for x in para:
+    if(x=='a'):
+        a=a+1
+    elif(x=='e'):
+        e=e+1
+    elif(x=='i'):
+        i=i+1
+    elif(x=='o'):
+        o=o+1
+    elif(x=='u'):
+        u=u+1
+    elif(x=='y'):
+        y=y+1
+        
+total = (a+e+i+o+u+y)
+print("Number of vowels are:",total)
+print("Number of a:",a)
+print("Number of e:",e)
+print("Number of i:",i)
+print("Number of o:",o)
+print("Number of u:",u)
+print("Number of y:",y)

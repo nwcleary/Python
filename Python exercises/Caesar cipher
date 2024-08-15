@@ -1,0 +1,68 @@
+inp = input("What word should I cipher?\n")
+reverse = ""
+for xx in inp:
+    if(xx=='a'):
+        reverse = reverse + 'b'
+    elif(xx=='b'):
+        reverse = reverse + 'c'
+    elif(xx=='c'):
+        reverse = reverse + 'd'
+    elif(xx=='d'):
+        reverse = reverse + 'e'
+    elif(xx=='e'):
+        reverse = reverse + 'f'
+    elif(xx=='f'):
+        reverse = reverse + 'g'
+    elif(xx=='g'):
+        reverse = reverse + 'h'
+    elif(xx=='h'):
+        reverse = reverse + 'i'
+    elif(xx=='i'):
+        reverse = reverse + 'j'
+    elif(xx=='j'):
+        reverse = reverse + 'k'
+    elif(xx=='k'):
+        reverse = reverse + 'l'
+    elif(xx=='l'):
+        reverse = reverse + 'm'
+    elif(xx=='m'):
+        reverse = reverse + 'n'
+    elif(xx=='n'):
+        reverse = reverse + 'o'
+    elif(xx=='o'):
+        reverse = reverse + 'p'
+    elif(xx=='p'):
+        reverse = reverse + 'q'
+    elif(xx=='q'):
+        reverse = reverse + 'r'
+    elif(xx=='r'):
+        reverse = reverse + 's'
+    elif(xx=='s'):
+        reverse = reverse + 't'
+    elif(xx=='t'):
+        reverse = reverse + 'u'
+    elif(xx=='u'):
+        reverse = reverse + 'v'
+    elif(xx=='v'):
+        reverse = reverse + 'w'
+    elif(xx=='w'):
+        reverse = reverse + 'y'
+    elif(xx=='y'):
+        reverse = reverse + 'x'
+    elif(xx=='x'):
+        reverse = reverse + 'z'
+        
+print("Ciphered word:",reverse)
+
+
+# CORRECT VERSION 
+word = input("What word should I cipher?\n")
+word_length = len(word)
+
+ciphered = ""
+for i in range(word_length):
+ old = ord(word[i])
+ new=old+1
+ ciphered +=chr(new)
+ i+=1
+print("Ciphered word: "+ciphered)

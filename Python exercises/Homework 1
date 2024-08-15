@@ -1,0 +1,60 @@
+## Write a Python script file named "comparison.py" 
+## that compares 3 variables (x, y, z) and prints out 
+## the largest number. Assign x, y, z to any numbers you like.
+
+x = 1
+
+y = 2
+
+z = 3
+
+if x > y and x > z:
+  
+	print(x)
+
+elif y > x and y > z:
+  
+	print(y)
+
+else:
+
+	print(z)
+## Updated version 
+
+x = input("Variable x:\n")
+print("x: "+x)
+y = input("Variable y:\n")
+print("y: "+y)
+z = input("Variable z:\n")
+print("z: "+z)
+
+
+if x > y and x > z:
+  
+	print("The largest number is: "+x)
+
+elif y > x and y > z:
+  
+	print("The largest number is: "+y)
+	
+## FINAL VERSION
+
+x = int(input("Variable x:\n"))
+# print("x: ",x)
+y = int(input("Variable y:\n"))
+# print("y: ",y)
+z = int(input("Variable z:\n"))
+# print("z: ",z)
+
+
+if x > y and x > z:
+  
+	print("The largest number is",x)
+
+elif y > x and y > z:
+  
+	print("The largest number is",y)
+
+else:
+
+	print("The largest number is",z)
